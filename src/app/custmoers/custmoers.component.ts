@@ -53,7 +53,7 @@ export class CustmoersComponent {
 
 
   getCustomerNameFromTransaction(customerId: number, Customers: ICustomers[]): string {
-    return Customers.find(c => c.id === customerId.toString())?.name || 'Not Found';
+    return Customers.find(c => c.id == customerId.toString())?.name || 'Not Found';
   }
 
   filterTransactionsAndCustomerName(): Itransaction[] {
