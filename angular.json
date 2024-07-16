@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/route-task-1",
+            "outputPath": "dist/browser",
             "baseHref": "/Transactions-App/",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -22,6 +22,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
+              
               {
                 "glob": "**/*",
                 "input": "public"
