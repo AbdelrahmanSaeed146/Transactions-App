@@ -10,11 +10,11 @@ export class CustomerDataServiceService {
 
 
   getAllCustomers():Observable<any>{
-    return this._HttpClient.get(`http://localhost:3000/customers`)
+    return this._HttpClient.get(`Local_API/Customers_Data.json`)
   }
 
   getAllTransactions():Observable<any>{
-    return this._HttpClient.get(`http://localhost:3000/transactions`)
+    return this._HttpClient.get(`Local_API/Customers_Data.json`)
   }
 
   

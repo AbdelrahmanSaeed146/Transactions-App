@@ -27,7 +27,7 @@ export class CustmoersComponent {
     this._CustomerServices.getAllCustomers().subscribe({
       next: (res) => {
         console.log(res);
-        this.Customers = res
+        this.Customers = res.customers
       },
       error: (error) => {
         console.log(error);
@@ -39,7 +39,7 @@ export class CustmoersComponent {
       next: (res) => {
         console.log(res);
 
-        this.Transactions = res
+        this.Transactions = res.transactions
       },
       error: (error) => {
         console.log(error);
